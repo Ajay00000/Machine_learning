@@ -14,7 +14,9 @@ df = pd.read_csv('/home/aj/Downloads/50_Startups.csv')
 label = LabelEncoder()
 
 df.iloc[:,3:4] = label.fit_transform(df.iloc[:,3:4])
-
+# =============================================================================
+# Calculatinng VIF 
+# =============================================================================
 def calc_vif(X):
 
     # Calculating VIF
