@@ -1,7 +1,7 @@
 getwd()
 setwd("/home/aj/Desktop")
 
-data = read.csv("Data.csv")
+data = read.csv("/home/aj/Desktop/MachineLearning/Data_preprocessing/Data.csv")
 data$age = ifelse(is.na(data$age),ave(data$age,FUN = function(x) mean(x,na.rm=TRUE)),data$age)
 data$sallary = ifelse(is.na(data$sallary),ave(data$sallary, FUN = function(x) mean(x,na.rm = TRUE)),data$sallary)
 
