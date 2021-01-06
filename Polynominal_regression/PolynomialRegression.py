@@ -20,6 +20,7 @@ y=data.iloc[:,-1].values
 plt.scatter(x,y)
 plt.show()
 
+
 lin_reg=LinearRegression()
 lin_reg.fit(x,y)
 
