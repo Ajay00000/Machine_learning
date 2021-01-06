@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import LinearRegression
 
-data = pd.read_csv('Position_Salaries.csv')
+data = pd.read_csv('/home/aj/Desktop/MachineLearning/Polynominal_regression/Position_Salaries.csv')
 data.head()
 
 x=data.iloc[:,1:-1].values
